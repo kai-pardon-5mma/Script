@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huur een vriend</title>
+<meta name="description" content="">
+</head>
+<body>
+    <header>
+        <h1>Huur een vriend</h1>
+        <Nav>
+            <ul>
+                <li><a href="#intro">Introductie</a></li>
+                <li><a href="#Lijstjes">Lijstjes</a></li>
+            </ul>
+        </Nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Introductie</h2>
+            <img src="images/WIN_20220217_11_18_24_Pro.jpg" alt="Foto van Andres" width="475px">
+            <p>Klik hier voor meer fotos <a href="google.com">van deze jongen.</a> </p>
+        </section>
+        <section><div id="lijstjes"></div>
+        <h2>Dingen die je wel en niet mag doen.</h2>
+        <h3>Dingen die je kan vragen.</h3>
+        <ul>
+            <li>Huren</li>
+            <li>Prijs</li>
+        </ul>
+        <h3>Dingen die je niet mag doen.</h3>
+        <ol>
+            <li>Pesten</li>
+            <li>Slagen</li>
+        </ol>
+       </section>
+        <section id="formulier">
+        <form action="">
+            <fieldset>
+                <legend>
+                    Zijn karakter:
+                </legend>
+                <input type="checkbox" name="Karakter" value="Aardig"> Aardig
+                <input type="checkbox" name="Karakter" value="Grappig"> Grappig
+                <input type="checkbox" name="Karakter" value="Agressief"> Agressief
+                <input type="checkbox" name="Karakter" value="Stil"> Stil
+                <input type="checkbox" name="Karakter" value="Praat genoeg"> Praat genoeg
+            </fieldset>
+            <fieldset>
+                <legend>Welke plaats?:</legend>
+                <input type="radio" name="Plaats" id="Kampenhout">Kampenhout
+                <input type="radio" name="Plaats" id="Keerbergen">Keerbergen
+                <input type="radio" name="Plaats" id="Leuven">Leuven
+                <input type="radio" name="Plaats" id="Mechelen">Mechelen
+            </fieldset>
+            <fieldset>
+                <legend>Commentaar</legend>
+                <textarea name="Commentaar" id="" cols="50" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Leeftijd</legend>
+                <input type="number" name="Leeftijd" id="" min="1" max="99">
+            </fieldset>
+            <fieldset>
+                <legend>Hoe heeft u van ons gehoord?:</legend>
+                <select name="" id="">
+                    <option value="vrienden/familie">Via vrienden/familie</option>
+                    <option value="advertentie">Via een advertentie</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Indienen</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
