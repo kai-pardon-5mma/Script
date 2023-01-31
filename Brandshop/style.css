@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(123, 48, 13);
+    padding: 1rem;
+    font-size: 20px;
+}
+
+header nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+nav{
+    color: black;
+}
+
+header input{
+    width: 8rem;
+    height: 3rem;
+}
+
+img{
+    width: 70px;
+}
+
+i{
+    font-size: 25px;
+    color: black;
+}
+
+.icons{
+    padding: bottom 1px; ;
+}
