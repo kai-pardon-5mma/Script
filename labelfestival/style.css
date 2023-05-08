@@ -1,0 +1,167 @@
+:root {
+    --bgc-01: hsl(0, 0%, 100%);
+    --bgc-02: #AA0000;
+    --txt-01: #ffff;
+    --txt-02: #FF154A;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bgc-01);
+    color: var(--txt-01);
+    font-family: "Segoe UI", Black;
+    line-height: 1;
+}
+
+/* header vormgeving */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    background-color: var(--bgc-02);
+    padding: 1rem ;
+    color: var(--txt-02)
+}
+
+header nav li{
+    display: inline-block;
+}
+
+header img{
+    width: 5rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-weight: 600;
+    margin-left: 150px;
+}
+
+a {
+    text-decoration: none  ;
+    margin: 10px;
+}
+
+header, main {
+    padding: 1rem;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 0.2ch;
+    font-weight: 600;
+}
+
+header nav {
+    justify-self: center;
+    align-self: center;
+}
+
+header nav ul li:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+  transform: translateY(-5px);
+}
+
+main {
+    background-image: url(static/achtergrond.png);
+    font-family: "Segoe UI", Black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 85px;
+    margin-right: 50px;
+}
+
+.grid-item img {
+    width: 110%; 
+    height: 100%; 
+    border-style: ridge;
+    border-color: #AA0000;
+    display: block;
+}
+
+.grid-item {
+    padding: 50px;
+    margin: -20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.grid-item img:hover {
+    transform: scale(1.1);
+    transform: translateY(10px);
+  }
+
+.grid-item h3 {
+  color: rgb(255, 255, 255);
+  bottom: 65px;
+  left: 15px;
+  letter-spacing: 0.5ch;
+
+  }
+
+.grid-item p {
+    position: absolute;
+    bottom: 45px;
+    left: 15px;
+    letter-spacing: 0.5ch;
+}
+
+body {
+    background-image: url('Images/Concert.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+  }  
+
+  footer {
+    background-color: #AA0000;
+    color: #FF154A;
+    height: 270px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+    justify-content: center;
+  }
+  
+.grid-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 105px;
+  }
+
+  .grid-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .grid-item h4:hover {
+    color: rgb(254, 254, 254);
+    transform: scale(1.1);
+    transform: translateX(10px);
+  }
