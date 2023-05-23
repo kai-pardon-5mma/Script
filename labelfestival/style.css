@@ -90,8 +90,8 @@ header nav ul li:hover {
 }
 
 .grid-item img {
-  width: 110%;
-  height: 100%;
+  width: 250px;
+  height: 160px;
   border-style: ridge;
   border-color: #AA0000;
   display: block;
