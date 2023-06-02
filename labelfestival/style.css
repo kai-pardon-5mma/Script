@@ -185,3 +185,9 @@ footer .grid-item {
 #artiestenpagina .footer {
   width: 100px;
 }
+
+#artiest .social-icon {
+  justify-content: center;
+  align-items: center;
+  color: #FF154A;
+}
