@@ -38,6 +38,19 @@ header nav li {
   display: inline-block;
 }
 
+header label[for="burger"] {
+ display: none;
+}
+
+header input#burger {
+  display: none;
+}
+
+header label[for="burger"] i {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 header img {
   width: 5rem;
 }
@@ -194,51 +207,56 @@ footer .grid-item {
   color: #FF154A;
 }
 
-header input#burger {
-  display: none;
-}
-
-header label[for="burger"] {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  display: none;
-  width: 100%;
-  padding: 1rem 1ch;
-  text-align: right;
-  cursor: pointer;
-}
-
-header label[for="burger"] i {
-  margin: 0;
-  font-size: 1.25rem;
-}
-
 @media (width <=750px) {
+  header {
+    justify-content: space-between;
+  }
+
   header label[for="burger"] {
     display: block;
+    cursor: pointer;
+    right: 1rem;
+    position: absolute;
   }
 
   header nav ul {
-    position: fixed;
+    position: absolute;
     z-index: 3;
-    top: 3rem;
-    right: 0;
     display: none;
-    padding-right: 1ch;
     width: 100%;
     background-color: var(--bgc-02);
-    text-align: center;
     user-select: none;
+    padding: 1rem;
+    top: 6rem;
+    flex-direction: column;
   }
 
-  header input#burger:checked+label[for="burger"]+nav ul {
+  header nav li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  header input#burger:checked+label+nav ul {
     display: flex;
-    flex-direction: column;
+  }
+
+  #artiest .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  #lineup .grid-container {
+    grid-template-columns: 1fr;
   }
 
   #artiest .grid-container {
     grid-template-columns: repeat(1,9fr);
+  }
+
+  .grid-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
 }
